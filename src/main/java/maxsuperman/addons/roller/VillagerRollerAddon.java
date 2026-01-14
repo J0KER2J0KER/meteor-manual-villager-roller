@@ -12,7 +12,7 @@ public class VillagerRollerAddon extends MeteorAddon {
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Villager Roller");
+        LOG.info("Initializing Meteor Manual Villager Roller");
 
         // Modules
         Modules.get().add(new VillagerRoller());
@@ -30,6 +30,6 @@ public class VillagerRollerAddon extends MeteorAddon {
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("maxsupermanhd", "meteor-villager-roller");
+        return new GithubRepo("j0ker2j0ker", "meteor-manual-villager-roller");
     }
 }

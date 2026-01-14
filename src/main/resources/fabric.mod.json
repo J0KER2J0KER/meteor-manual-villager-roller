@@ -1,16 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "meteor-villager-roller",
+  "id": "meteor-manual-villager-roller",
   "version": "${version}",
-  "name": "Meteor Villager Roller",
-  "description": "Addon that rolls trades on villagers.",
+  "name": "Meteor Manual Villager Roller",
+  "description": "Addon that helps you roll trades on villagers.",
   "authors": [
-    "FlexCoral",
-    "seasnail8169",
-    "Cloudburst"
+    "J0KER2J0KER"
   ],
   "contact": {
-    "repo": "https://github.com/maxsupermanhd/meteor-villager-roller"
+    "repo": "https://github.com/j0ker2j0ker/meteor-manual-villager-roller"
   },
   "icon": "assets/roller/icon.png",
   "environment": "client",
@@ -25,7 +23,7 @@
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}", "1.21.9"],
+    "minecraft": ["${mc_version}"],
     "meteor-client": "*"
   }
 }
