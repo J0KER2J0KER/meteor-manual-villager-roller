@@ -627,7 +627,7 @@ public class VillagerRoller extends Module {
             }
         }
         if(waitRandom.get()) {
-            waiting = random.nextInt(20)+5;
+            waiting = random.nextInt(15)+5;
             waiting_closegui = true;
         }else {
             mc.player.closeHandledScreen();
@@ -636,10 +636,11 @@ public class VillagerRoller extends Module {
 
     @EventHandler
     private void onTick(TickEvent.Pre event) {
+        System.out.println(waiting);
         if(waiting>0) {
             waiting--;
         }
-        if(waiting_closegui) {
+        if(waiting_closegui && waiting == 0) {
             mc.player.closeHandledScreen();
             waiting_closegui = false;
         }
